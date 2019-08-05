@@ -1,12 +1,12 @@
 # CocoaPodsTutorial
 
 Let's release my CocoaPod!
-
 <br/><br/>
 
 ## Goal
 
 Every projects can easily use my custom extensions and protocols.
+<br/><br/>
 
 ## What is CocoaPods?
 
@@ -14,12 +14,14 @@ CocoaPods is a Library Dependency Manager of Xcode Project. CocoaPods helps to e
 
 Why do we need 'dependency manager'?
 https://en.wikipedia.org/wiki/Dependency_hell
+<br/><br/>
 
 ## Install CocoaPods
 
 ```ruby
 $ sudo gem install cocoapods
 ```
+<br/><br/>
 
 팟 인스톨 vs 팟 업데이트
 : 새로운 팟이 추가되었을 때는 인스톨, 기존에 있던 팟의 버전만 변경하려면 업데이트
