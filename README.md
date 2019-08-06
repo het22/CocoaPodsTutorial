@@ -4,7 +4,7 @@ Let's release  CocoaPod!<br/>
 [1. What is CocoaPods?](#what-is-cocoapods)<br/>
 [2. Install CocoaPods](#install-cocoapods)<br/>
 [3. Make CocoaPods Project](#make-cocoapods-project)<br/>
-[4. Create my own Pod](#create-own-pod)<br/>
+[4. Create own Pod](#create-own-pod)<br/>
 
 ***
 
