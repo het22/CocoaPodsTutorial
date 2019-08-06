@@ -1,5 +1,5 @@
 # CocoaPodsTutorial
-Let's release my CocoaPod!<br/>
+Let's release  CocoaPod!<br/>
 
 [1. What is CocoaPods?](#what-is-cocoapods)<br/>
 [2. Install CocoaPods](#install-cocoapods)<br/>
