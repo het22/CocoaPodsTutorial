@@ -3,7 +3,8 @@ Let's release my CocoaPod!<br/>
 
 [1. What is CocoaPods?](#what-is-cocoapods)<br/>
 [2. Install CocoaPods](#install-cocoapods)<br/>
-[3. Make CocoaPods Project](#make-cocoapods-project)
+[3. Make CocoaPods Project](#make-cocoapods-project)<br/>
+[4. Create my own Pod](#create-my-own-pod)<br/>
 
 ***
 
@@ -39,16 +40,44 @@ end
 ```
 pod install
 ```
-5. Open Xcode workspace and do your job
+5. Open Xcode workspace and do your job!
 
-## 
+## Create my own Pod
 
-코코아팟 만들기
-: pod lib create [pod name]
+1. Create Xcode Pod project
+```
+pod lib create [pod name]
+```
+> 1-1 Choose Platform [iOS/macOS] </br>
+> 1-2 Choose Language [Swift/ObjC] </br>
+> 1-3 Include Demo Application [Y/N] </br>
+> 1-4 Testing Framework [Quick/None] </br>
+> 1-5 View Based Testing [Y/N] </br>
 
-classes 폴더에서 파일 만들고 작업하기
-깃에 릴리즈하기
-팟 스펙에 릴리즈 버전 명시
+2. Create own files in 'classes' directory
+3. Specify version in .podspec
+```
+Pod::Spec.new do |s|
+  ...
+  s.version = '0.1.0'
+  ...
+end
+```
+4. Release commit and push
+```
+git -a -m '[commit summary]
+git tag 0.1.0
+git push origin 0.1.0
+```
+5. Validate Pod(If need, fix errors)
+```
 pod spec lint
-(코코아팟에 등록안되있다면) pod trunk register [이메일] [이름] [현재 기기명]
-pod trunk push [pod spec name].podspec
+```
+6. Register session
+```
+pod trunk [email address] '[name]' --description='[decription of session]'
+```
+7. Deploy pod!
+```
+pod trunk push [project name].podspec
+```
