@@ -7,32 +7,39 @@ Every projects can easily use my custom extensions and protocols.<br/>
 ## What is CocoaPods?
 CocoaPods is a Library Dependency Manager of Xcode Project. CocoaPods helps to easily discover 3rd-party opensource libraries.
 
-Why do we need 'dependency manager'?<br/>
+Why do we need dependency manager?<br/>
 https://en.wikipedia.org/wiki/Dependency_hell<br/>
 
 ## Install CocoaPods
-```ruby
-$ sudo gem install cocoapods
 ```
-<br/>
+sudo gem install cocoapods
+```
 
 ## Make CocoaPods Project
+1. Create a new Xcode project
+2. Initialize Pod in the project directory
+```
+pod init
+```
+3. Edit Podfile
+```
+platform: [platform], '[version]'
 
-팟 인스톨 vs 팟 업데이트
-: 새로운 팟이 추가되었을 때는 인스톨, 기존에 있던 팟의 버전만 변경하려면 업데이트
+target '[project name]' do
 
-코코아팟 엑스코드 프로젝트 만들기
-: 새로운 엑스코드 프로젝트 생성
-: 프로젝트 디렉토리에서 pod init
-: Podfile에서 플랫폼, 버전, 타켓 프로젝트 입력
-: 추가할 pod과 버전정보 입력
-: pod install
-: 디렉토리에 생성된 엑스코드 워크스페이스로 작업하기
+  use_frameworks!
 
-락 파일은 무엇?
-: 설치된 모든 라이브러리와 그 버전의 스냅샷
+  pod [pod name], ~>[version]
 
-코코아팟을 만든다는 것 -> podspec을 만드는 것
+end
+```
+4. Install Pod
+```
+pod install
+```
+5. Open Xcode workspace and do your job
+
+## 
 
 코코아팟 만들기
 : pod lib create [pod name]
