@@ -4,7 +4,7 @@ Let's release my CocoaPod!<br/>
 [1. What is CocoaPods?](#what-is-cocoapods)<br/>
 [2. Install CocoaPods](#install-cocoapods)<br/>
 [3. Make CocoaPods Project](#make-cocoapods-project)<br/>
-[4. Create my own Pod](#create-my-own-pod)<br/>
+[4. Create my own Pod](#create-own-pod)<br/>
 
 ***
 
@@ -42,7 +42,7 @@ pod install
 ```
 5. Open Xcode workspace and do your job!
 
-## Create my own Pod
+## Create own Pod
 
 1. Create Xcode Pod project
 ```
