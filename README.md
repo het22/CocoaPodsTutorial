@@ -65,7 +65,7 @@ end
 ```
 4. Release commit and push
 ```
-git -a -m '[commit summary]
+git -a -m '[commit summary]'
 git tag 0.1.0
 git push origin 0.1.0
 ```
