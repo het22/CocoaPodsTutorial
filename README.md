@@ -8,10 +8,9 @@ Let's release my CocoaPod!<br/>
 ***
 
 ## What is CocoaPods?
-CocoaPods is a Library Dependency Manager of Xcode Project. CocoaPods helps to easily discover 3rd-party opensource libraries.
+CocoaPods is a library dependency manager of Xcode project. CocoaPods helps to easily discover 3rd-party opensource libraries.
 
-Why do we need dependency manager?<br/>
-https://en.wikipedia.org/wiki/Dependency_hell<br/>
+###### Why do we need dependency manager? https://en.wikipedia.org/wiki/Dependency_hell
 
 ## Install CocoaPods
 ```
