@@ -23,12 +23,12 @@ sudo gem install cocoapods
 </br>
 
 ## Make CocoaPods Project
-1. Create a new Xcode project
-2. Initialize Pod in the project directory
+1. **Create a new Xcode project**
+2. **Initialize Pod in the project directory**
 ```
 pod init
 ```
-3. Edit Podfile
+3. **Edit Podfile**
 ```
 platform: [platform], '[version]'
 
@@ -40,17 +40,17 @@ target '[project name]' do
 
 end
 ```
-4. Install Pod
+4. **Install Pod**
 ```
 pod install
 ```
-5. Open Xcode workspace and do your job!
+5. **Open Xcode workspace and do your job!**
 
 </br>
 
 ## Create own Pod
 
-1. Create Xcode Pod project
+1. **Create Xcode Pod project**
 ```
 pod lib create [pod name]
 ```
@@ -60,8 +60,8 @@ pod lib create [pod name]
 > 1-4 Testing Framework [Quick/None] </br>
 > 1-5 View Based Testing [Y/N] </br>
 
-2. Create own files in 'classes' directory
-3. Specify version in .podspec
+2. **Create own files in 'classes' directory**
+3. **Specify version in .podspec**
 ```
 Pod::Spec.new do |s|
   ...
@@ -69,21 +69,21 @@ Pod::Spec.new do |s|
   ...
 end
 ```
-4. Release commit and push
+4. **Release commit and push**
 ```
 git -a -m '[commit summary]'
 git tag 0.1.0
 git push origin 0.1.0
 ```
-5. Validate Pod(If need, fix errors)
+5. **Validate Pod(If need, fix errors)**
 ```
 pod spec lint
 ```
-6. Register session
+6. **Register session**
 ```
 pod trunk [email address] '[name]' --description='[decription of session]'
 ```
-7. Deploy pod!
+7. **Deploy pod!**
 ```
 pod trunk push [project name].podspec
 ```
