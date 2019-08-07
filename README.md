@@ -13,10 +13,14 @@ CocoaPods is a library dependency manager of Xcode project. CocoaPods helps to e
 
 ###### Why do we need dependency manager? https://en.wikipedia.org/wiki/Dependency_hell
 
+</br>
+
 ## Install CocoaPods
 ```
 sudo gem install cocoapods
 ```
+
+</br>
 
 ## Make CocoaPods Project
 1. Create a new Xcode project
@@ -41,6 +45,8 @@ end
 pod install
 ```
 5. Open Xcode workspace and do your job!
+
+</br>
 
 ## Create own Pod
 
